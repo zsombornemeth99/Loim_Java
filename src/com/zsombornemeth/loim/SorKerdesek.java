@@ -16,6 +16,7 @@ public class SorKerdesek
         {
             FileReader r = new FileReader(fajl);
             BufferedReader br = new BufferedReader(r);
+            br.readLine();
             String sor = br.readLine();
             while (sor != null)
             {
@@ -25,6 +26,7 @@ public class SorKerdesek
                         adatok[5], adatok[6]);
 
                 this.sorKerdesLista.add(sk);
+                sor=br.readLine();
             }
             br.close();
             r.close();
