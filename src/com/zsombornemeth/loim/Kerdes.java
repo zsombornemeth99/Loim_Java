@@ -38,10 +38,12 @@ public class Kerdes extends AltalanosKerdes
         this.nehezsegiSzint = nehezsegiSzint;
     }
 
-    /*public boolean helyesE(char tipp)
+    public boolean helyesE(Character tipp)
     {
-        return;
-    }*/
+        Character nagyTipp = Character.toUpperCase(tipp);
+
+        return nagyTipp.equals(this.helyesValasz);
+    }
 
     public String getKerdes()
     {
@@ -65,4 +67,5 @@ public class Kerdes extends AltalanosKerdes
 
         return s;
     }
+
 }

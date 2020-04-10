@@ -11,6 +11,8 @@ public class Main
         SorKerdesek sk = new SorKerdesek("sorkerdes.txt");
 
         Kerdesek k = new Kerdesek("kerdes.txt");
-        System.out.println(k.getKerdesekSzama(15));
+        System.out.println(k);
+
+
     }
 }
